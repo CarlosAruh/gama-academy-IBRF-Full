@@ -1,8 +1,14 @@
+import Link from "../Link/Index";
 import "./style.css";
 
 function Header(){
     return(<header>
-    <h1>Pagina Header</h1>
+    <p>Din Din</p>
+    <nav>
+        <Link texto="Curso" redirect="/curso" />
+        <Link texto="Blog" redirect="/curso" />
+        <Link texto="Contato" redirect="/contato" />
+    </nav>
     </header>
     )
 }
