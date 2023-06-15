@@ -1,0 +1,12 @@
+.box{
+    height: 50vh;
+    width: 100%;
+}
+
+.escuro {
+    background-color: gray;
+}
+
+.claro{
+    background-color: white;
+}
