@@ -1,4 +1,5 @@
 import "./style.css";
+import {Link as LinkRout} from "react-router-dom";
 
 interface LinkProps{
     texto: string;
@@ -7,8 +8,8 @@ interface LinkProps{
 
 export default function Link(props: LinkProps){
     return (
-        <a className="Link-menu" href={props.redirect} target="_black" rel="noreferr">
+        <LinkRout className="Link-menu" to={props.redirect} >
             {props.texto}
-        </a>
+        </LinkRout>
     )
 }

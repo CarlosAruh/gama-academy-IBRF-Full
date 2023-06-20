@@ -23,18 +23,24 @@ const orderItemSchema = new mongoose.Schema({
 );
 
 const orderSchema = new mongoose.Schema({
-    name:{type: String, required:true},
-    image:{type: String, required:true},
-    price:{type: Number, defaut:0, required:true},
-    category:{type: String, required:true},
-    description:{type: String, required:true},
-    rating:{type: String, required:true},
-    countInStock:{type: Number, default:0, required:true},
-    brand:{type: String, required:true},
-    validate:{type: Date, required:true}
+    user:{type: mongoose.Schema.Types.ObjectId, ref:'User', required:true},
+    orderItems:[orderItemSchema],
+    shipping:shippingSchema,
+    payment:paymentSchema,
+    itemPrice:{type: Number},
+    taxPrice:{type: Number},
+    shippingPrice:{type: Number},
+    totalPrice:{type: Number},
+    isPaid:{type: Boolean, default:false},
+    paidAt:{type:Date},
+    isDelivered:{type:Boolean, defalt:false},
+    deliveredAt:{type:Date}
 
 },{
     timestamp:true
 }
 
-)
+);
+
+const orderModel = mongoose.model("Order", orderSchema);
+export default orderModel;
