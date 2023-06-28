@@ -1,0 +1,13 @@
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\bin\Debug\Console_Database_Primeiro.exe.config
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\bin\Debug\Console_Database_Primeiro.exe
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\bin\Debug\Console_Database_Primeiro.pdb
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\bin\Debug\EntityFramework.dll
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\bin\Debug\EntityFramework.xml
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\obj\Debug\Console_Database_Primeiro.csproj.AssemblyReference.cache
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\obj\Debug\Console_Database_Primeiro.csproj.SuggestedBindingRedirects.cache
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\obj\Debug\Console_Database_Primeiro.csproj.CoreCompileInputs.cache
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\obj\Debug\Console_Database_Primeiro.csproj.CopyComplete
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\obj\Debug\Console_Database_Primeiro.exe
+C:\Users\samae\Documents\VSCode\gama-academy-IBRF-Full\Console_Database_Primeiro\Console_Database_Primeiro\obj\Debug\Console_Database_Primeiro.pdb

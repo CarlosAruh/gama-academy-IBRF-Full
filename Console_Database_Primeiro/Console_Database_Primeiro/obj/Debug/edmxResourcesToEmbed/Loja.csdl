@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LojaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PEDIDOes" Relationship="Self.FK__PEDIDO__CLIENTE___38996AB5" FromRole="CLIENTE" ToRole="PEDIDO" />
+  </EntityType>
+  <EntityType Name="PEDIDO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CLIENTE_ID" Type="Int32" />
+    <Property Name="ITEM" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PRECO" Type="Single" />
+    <NavigationProperty Name="CLIENTE" Relationship="Self.FK__PEDIDO__CLIENTE___38996AB5" FromRole="PEDIDO" ToRole="CLIENTE" />
+  </EntityType>
+  <Association Name="FK__PEDIDO__CLIENTE___38996AB5">
+    <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="0..1" />
+    <End Role="PEDIDO" Type="Self.PEDIDO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PEDIDO">
+        <PropertyRef Name="CLIENTE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LojaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CLIENTEs" EntityType="Self.CLIENTE" />
+    <EntitySet Name="PEDIDOes" EntityType="Self.PEDIDO" />
+    <AssociationSet Name="FK__PEDIDO__CLIENTE___38996AB5" Association="Self.FK__PEDIDO__CLIENTE___38996AB5">
+      <End Role="CLIENTE" EntitySet="CLIENTEs" />
+      <End Role="PEDIDO" EntitySet="PEDIDOes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
